@@ -1,0 +1,12 @@
+<div class="container">
+  <h1><%= @flat['name'] %></h1>
+  <p>£<%= @flat['price'] %></p>
+  <p>
+    <%# with text %>
+    <%= link_to 'Go Back', root_path, class: 'btn btn-light' %>
+    <%# with an icon %>
+    <%= link_to root_path, class: 'btn btn-light' do %>
+      <i class="fas fa-home"></i>
+    <% end %>
+  </p>
+</div>
